@@ -1,0 +1,3 @@
+just for now use this to configure with specific database:
+./configure --with-force-sql=mysql
+(or pgsql or oracle)

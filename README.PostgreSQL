@@ -1,0 +1,33 @@
+Steps to run netacct-mysql with PostgreSQL 
+/tested on RedHat AS2.1 with PostgreSQL 8.0.1 compiled from source/
+
+As root enter:
+
+cp netacct-mysql-0.79.tar.gz /usr/src
+tar xzvf netacct-mysql-0.79.tar.gz
+
+adduser acct
+su - acct
+/usr/local/pgsql/bin/initdb netacct
+
+#edit /home/acct/netacct/pg_hba.conf to gain access to postgresql over tcp
+#example:
+#host    all         all         <ip of server with netacct>  255.255.255.255   trust
+
+/usr/local/pgsql/bin/postmaster -i -p 5432 -D netacct &
+/usr/local/pgsql/bin/createdb netacct
+psql netacct < /usr/src/netacct-mysql-0.79/netacct.pgsql
+
+cd /usr/src/netacct-mysql-0.79
+./configure --with-force-sql=pgsql
+make
+make install
+
+#in file /etc/nacctab enter configuration variables
+
+#start nacctd
+nacctd -c /etc/nacctab 
+
+*** see other README's for other info about netacct-mysql ***
+
+for questions and comments write to Vladislav Tsanev <tvlado@fibank.bg>

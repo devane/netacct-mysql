@@ -1,0 +1,30 @@
+CREATE DATABASE 'netacct.fdb';
+
+CREATE TABLE rrd (
+  ip varchar(15) NOT NULL,
+  input bigint NOT NULL,
+  output bigint NOT NULL,
+  peer_input bigint NOT NULL,
+  peer_output bigint NOT NULL,
+  direct_input bigint NOT NULL,
+  direct_output bigint NOT NULL,
+  local_input bigint NOT NULL,
+  local_output bigint NOT NULL
+);
+
+CREATE TABLE traffic (
+  id bigint NOT NULL,
+  ip varchar(15) NOT NULL,
+  time timestamp NOT NULL,
+  input bigint NOT NULL,
+  output bigint NOT NULL,
+  peer_input bigint NOT NULL,
+  peer_output bigint NOT NULL,
+  direct_input bigint NOT NULL,
+  direct_output bigint NOT NULL,
+  local_input bigint NOT NULL,
+  local_output bigint NOT NULL,
+  PRIMARY KEY  (id),
+);
+
+CREATE INDEX rrd_ip_index ON rrd (ip);

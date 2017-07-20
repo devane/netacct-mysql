@@ -1,0 +1,61 @@
+config.o : \
+ config.c /usr/include/stdio.h /usr/include/sys/types.h \
+ /usr/include/machine/types.h /usr/include/sys/cdefs.h \
+ /usr/include/machine/cdefs.h /usr/include/machine/ansi.h \
+ /usr/include/machine/endian.h /usr/include/sys/endian.h \
+ /usr/include/stdlib.h /usr/include/string.h /usr/include/ctype.h \
+ netacct.h /usr/include/sys/socket.h /usr/include/machine/param.h \
+ /usr/include/errno.h /usr/include/syslog.h /usr/include/time.h \
+ /usr/include/limits.h /usr/include/sys/limits.h \
+ /usr/include/machine/internal_types.h /usr/include/machine/limits.h \
+ /usr/include/sys/syslimits.h /usr/include/pcap.h \
+ /usr/include/sys/time.h /usr/include/net/bpf.h /usr/include/pthread.h \
+ /usr/include/sys/signal.h /usr/include/machine/signal.h \
+ /usr/include/machine/trap.h /usr/include/sys/siginfo.h \
+ /usr/include/sched.h /usr/include/netinet/in.h \
+ /usr/include/netinet6/in6.h /usr/include/arpa/inet.h \
+ /usr/include/sys/param.h /usr/include/sys/simplelock.h \
+ /usr/include/net/if.h /usr/include/sys/queue.h \
+ /usr/include/altq/if_altq.h /usr/include/net/if_arp.h ../config.h
+config.c :
+/usr/include/stdio.h :
+/usr/include/sys/types.h :
+/usr/include/machine/types.h :
+/usr/include/sys/cdefs.h :
+/usr/include/machine/cdefs.h :
+/usr/include/machine/ansi.h :
+/usr/include/machine/endian.h :
+/usr/include/sys/endian.h :
+/usr/include/stdlib.h :
+/usr/include/string.h :
+/usr/include/ctype.h :
+netacct.h :
+/usr/include/sys/socket.h :
+/usr/include/machine/param.h :
+/usr/include/errno.h :
+/usr/include/syslog.h :
+/usr/include/time.h :
+/usr/include/limits.h :
+/usr/include/sys/limits.h :
+/usr/include/machine/internal_types.h :
+/usr/include/machine/limits.h :
+/usr/include/sys/syslimits.h :
+/usr/include/pcap.h :
+/usr/include/sys/time.h :
+/usr/include/net/bpf.h :
+/usr/include/pthread.h :
+/usr/include/sys/signal.h :
+/usr/include/machine/signal.h :
+/usr/include/machine/trap.h :
+/usr/include/sys/siginfo.h :
+/usr/include/sched.h :
+/usr/include/netinet/in.h :
+/usr/include/netinet6/in6.h :
+/usr/include/arpa/inet.h :
+/usr/include/sys/param.h :
+/usr/include/sys/simplelock.h :
+/usr/include/net/if.h :
+/usr/include/sys/queue.h :
+/usr/include/altq/if_altq.h :
+/usr/include/net/if_arp.h :
+../config.h :
